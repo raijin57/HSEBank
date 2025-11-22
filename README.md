@@ -5,7 +5,7 @@
 - **Репозиторий:** `IRepository<T>` и `InMemoryRepository<T>`.
 - **Фабрика:** `IMainFactory` / `MainFactory` — централизованное создание сущностей (валидация при создании).
 - **Фасады:** `BankAccountFacade`, `CategoryFacade`, `OperationFacade`, `AnalyticsFacade` — сгруппированные операции по областям.
-- **Команды: **набор команд в папке `Commands` + `CompositeCommand` — сценарии пользовательских действий оформлены как команды.
+- **Команды** набор команд в папке `Commands` + `CompositeCommand` — сценарии пользовательских действий оформлены как команды.
 - **Декоратор:** `CommandTimerDecorator` — обёртка для измерения времени выполнения команд.
 - **Шаблонный метод:** `FileImporter` — общий алгоритм импорта; конкретные форматы — `CSVImporter`, `JSONImporter`.
 - **Посетитель для экспорта:** `IExportVisitor`, `JSONExportVisitor`, `CSVExportVisitor`.
