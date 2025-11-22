@@ -29,9 +29,9 @@
 - **Фабрика** — `MainFactory` / `IMainFactory`. Обеспечивает единое место создания объектов и валидацию (пример: `CreateOperation` проверяет amount > 0).
 - **Фасад** — `OperationFacade`, `BankAccountFacade`, `CategoryFacade` (объединяют операции CRUD).
 - **Команда** — папка `Commands` + `CompositeCommand` — сценарии как команды, возможность undo (история в `Program.cs`).
-- **Декоратор  — `CommandTimerDecorator` — измеряет время выполнения любой команды.
+- **Декоратор** — `CommandTimerDecorator` — измеряет время выполнения любой команды.
 - **Шаблон** — `FileImporter` + конкретные имплементации `CSVImporter` / `JSONImporter`.
-- **Посетитель — `IExportVisitor` и реализации для CSV/JSON (генерация файлов экспорта).
+- **Посетитель** — `IExportVisitor` и реализации для CSV/JSON (генерация файлов экспорта).
 ---
 ## Тесты — что есть и как запускать
 Команды (в корне `FinancialApp`):
